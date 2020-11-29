@@ -1,0 +1,160 @@
+*{
+    background-color:;
+    margin:0;
+    padding:0;
+}
+
+h1,h2{
+    text-align: center;
+   
+}
+h4{
+    color:rgb(252, 4, 4);
+}
+
+table{
+    widows: 100px;
+    text-align:left;
+    border-collapse:collapse;
+    background-color:red;
+}
+
+table tr{
+    background-color:yellowgreen;
+    color:white;
+}
+
+.container{
+    text-align: center;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.btn{
+    border:1px solid #00ffff;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1,.btn2,.btn6{
+    color: #00ffff;
+}
+
+.btn3,.btn4,.btn5,.btn7{
+    color: #fff;
+}
+
+
+.btn1:hover,.btn2:hover,.btn6:hover{
+    color: #fff;
+}  
+
+.btn3:hover,.btn4:hover,.btn5:hover,.btn7:hover{
+    color: #00ffff;
+}
+
+.btn::before{
+    content:" ";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00ffff;
+    z-index: -1;
+    transition: 0.8s;
+} 
+
+.btn1::before,.btn3::before,.btn6::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+} 
+
+.btn2::before,.btn4::before,.btn5::before,.btn7::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;   
+} 
+
+
+.btn3::before,.btn4::before,.btn5::before{
+    height: 180%;   
+} 
+
+.btn1:hover::before,.btn2:hover::before,.btn6:hover::before{
+    height: 180%;
+} 
+
+.btn3:hover::before,.btn4:hover::before,.btn5:hover::before,.btn7:hover::before{
+    height: 0%;
+}
+
+
+
+ul{
+	display: flex;
+	background: #fff;
+	border-radius: 80px;
+    padding:15px;
+    
+}
+
+li{
+    list-style: none;
+    
+}
+
+li:hover a{
+    transform: scale(1.2);
+       
+}
+
+
+a{
+	width: 150px;
+	height: 100px;
+	display: block;
+	border-radius: 25%;
+	cursor: pointer;
+	margin: 0 15px;
+    transition:transform 0.5s;
+    
+	
+}
+
+.line{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.bad,.new{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.boy{
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.paragraph{
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Anton', sans-serif;
+    background-color: lightgrey;
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+
+}

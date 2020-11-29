@@ -1,0 +1,37 @@
+
+<html>
+  <head>
+  <title>colour colour in</title> 
+  <link rel="stylesheet" href="./style.css" >  
+<body>
+   
+<ul>
+  <li><a href="#" style="background:#00b09b"></a></li>
+  <li><a href="#" style="background:#f12711"></a></li>
+  <li><a href="#" style="background:#f5af19"></a></li>
+  <li><a href="#" style="background:magenta"></a></li><li>
+  <li><a href="#" style="background:mediumseagreen"></a></li>
+  <li><a href="#" style="background:aquamarine"></a></li>
+  <li><a href="#" style="background:rosybrown"></a></li>
+</ul>
+
+
+<script type="text/javascript">
+  
+  var anchor=document.querySelectorAll("ul li a");
+
+  anchor.forEach(function(obj){
+
+    obj.addEventListener("click",function(){
+
+      var getColor=obj.style.background;
+
+      document.body.style.background=getColor;
+
+    })
+  });
+
+
+</script>
+</body>  
+</html>
